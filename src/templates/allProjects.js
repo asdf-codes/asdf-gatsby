@@ -1,5 +1,5 @@
 import React from "react"
-import {graphql} from "gatsby"
+import {graphql, Link} from "gatsby"
 import {
     ContentCard,
     Pagination
@@ -15,9 +15,13 @@ const allProjects = ({pageContext, data}) => {
 
     const posts = data.allMdx.edges
 
-
     return (
         <Container>
+            <Link style={{
+                gridColumn: "2 / 3",
+                backgroundColor: "pink",
+                height: "25px",
+            }}to='/'>back</Link>
             {posts.map(post => (
                 <ContentCard 
                     key={post.node.frontmatter.slug}
@@ -28,6 +32,7 @@ const allProjects = ({pageContext, data}) => {
                     image={post.node.frontmatter.featureImage.childImageSharp.fluid}
                 /> 
             ))}
+            
             <Pagination 
                 isFirst={isFirst}
                 isLast={isLast}

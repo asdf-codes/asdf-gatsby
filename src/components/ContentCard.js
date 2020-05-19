@@ -1,11 +1,13 @@
 import React from 'react'
+import { ContentWrapper, ContentLink } from '../elements'
 import { CoverImage } from '../components'
-import { ContentWrapper } from '../elements'
 
 export const ContentCard = ({ title, excerpt, slug, image }) => {
     return (
         <ContentWrapper>
-            <CoverImage fluid={image}/>
+            <ContentLink to={slug}>
+                <CoverImage fluid={image}/>
+            </ContentLink>
         </ContentWrapper>
     )
 }

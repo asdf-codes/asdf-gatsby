@@ -18,7 +18,7 @@ export const Button = styled.button `
 `
 
 export const H1 = styled.h1 `
-    font-size: clamp(30px, 8vw, 12vw);
+    font-size: clamp(38px, 8vw, 12vw);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -44,7 +44,7 @@ export const P = styled.p`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: clamp(18px, 4vw, 6vw);;
+    font-size: clamp(25px, 4vw, 6vw);;
 `
 
   

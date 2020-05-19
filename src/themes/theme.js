@@ -15,7 +15,7 @@ export default {
       light2: "hsl(0,0%,99%)",
     },
     breakpoints: {
-      mobile: "only screen and (max-width: 50rem)",
+      mobile: "only screen and (max-width: 30rem)",
       tablet: "only screen and (max-width: 65rem)",
     },
     spacing: {
