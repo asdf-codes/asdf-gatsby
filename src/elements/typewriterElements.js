@@ -13,7 +13,7 @@ export const Button = styled.button `
     text-align: right;
     border-bottom: 0.07em solid blue;
     display: inline-block;
-    font-size: clamp(12px, 3vw, 22px);
+    font-size: clamp(18px, 3vw, 22px);
     cursor: pointer;
 `
 

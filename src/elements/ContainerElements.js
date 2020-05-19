@@ -12,7 +12,7 @@ export const Container = styled.div `
 `
 
 export const ContainerNull = styled.div `
-    padding-top: 10rem;
+    padding-top: 15rem;
     grid-column: 2 / 3;
     flex-direction: column;
     align-items: center;

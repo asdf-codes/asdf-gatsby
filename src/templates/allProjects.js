@@ -19,9 +19,11 @@ const allProjects = ({pageContext, data}) => {
         <Container>
             <Link style={{
                 gridColumn: "2 / 3",
-                backgroundColor: "pink",
-                height: "25px",
-            }}to='/'>back</Link>
+                display: "flex",
+                paddingTop: "2rem",
+                justifyContent: "center",
+                
+            }}to='/'>asdf</Link>
             {posts.map(post => (
                 <ContentCard 
                     key={post.node.frontmatter.slug}

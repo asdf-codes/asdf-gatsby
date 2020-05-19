@@ -36,13 +36,19 @@ exports.createPages = async function({actions, graphql}) {
     const projects = data.allMdx.edges
 
 // create single blog posts
-    projects.forEach(edge => {
+    projects.forEach((edge, i) => {
         const slug = edge.node.frontmatter.slug
         const id = edge.node.id
         actions.createPage({
             path: slug,
             component: require.resolve(`./src/templates/inProject.js`),
-            context: {id},
+            context: {
+                id,
+                limit: postPerPage,
+                skip: i * postPerPage,
+                numPages,
+                currentPage: i + 1,
+            },
         })
     })
 } 
