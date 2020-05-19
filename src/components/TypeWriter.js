@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, ContainerNull, ButtonWrapper, H1, P, Button} from '../elements'
+import {Link} from 'gatsby'
 
 
 export const TypeWriter = () => {
@@ -15,7 +16,7 @@ export const TypeWriter = () => {
                 </P>
 
                 <ButtonWrapper>
-                    <Button>Ideas on the internet</Button>
+                    <Button><Link to="Projects">Ideas on the internet</Link></Button>
                 </ButtonWrapper>
             </ContainerNull>
         </Container>
