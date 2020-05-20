@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 export const ContentWrapper = styled.div `
+    margin-top: 5rem;
     grid-column: 2 / 3;
     grid-row: 2/3;
     overflow: hidden;

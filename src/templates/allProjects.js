@@ -17,12 +17,16 @@ const allProjects = ({pageContext, data}) => {
 
     return (
         <Container>
-            <Link style={{
-                gridColumn: "2 / 3",
-                display: "flex",
-                paddingTop: "2rem",
-                justifyContent: "center",
-                
+            <Link style={{        
+                width: '100%',
+                height: '50px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign:  'center',
+                position: 'fixed',
+                backgroundClor: 'white',
+                zIndex: '10',
             }}to='/'>asdf</Link>
             {posts.map(post => (
                 <ContentCard 
@@ -32,8 +36,10 @@ const allProjects = ({pageContext, data}) => {
                     excerpt={post.node.frontmatter.excerpt}
                     slug={post.node.frontmatter.slug}
                     image={post.node.frontmatter.featureImage.childImageSharp.fluid}
+                    body={post.node.body}
                 /> 
-            ))}
+            ))} 
+            
             
             <Pagination 
                 isFirst={isFirst}
@@ -53,6 +59,7 @@ export const pageQuery = graphql`
         allMdx(sort: {fields: frontmatter___date, order: DESC}, skip: $skip, limit: $limit) {
             edges {
             node {
+                body
                 frontmatter {
                 date
                 excerpt
