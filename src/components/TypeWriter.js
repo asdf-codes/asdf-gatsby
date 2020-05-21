@@ -14,12 +14,13 @@ export const TypeWriter = () => {
                 <P>
                 put ideas on the internet.
                 </P>
-
-                <ButtonWrapper>
-                    <Button><Link to="Projects" style={{
-                        
-                    }}> 👁PROJECTS👁</Link></Button>
+                <div style={{
+                    paddingTop: '3vw',
+                }}>
+                <ButtonWrapper to="Projects">
+                    <Button>👁 PROJECTS 👁</Button>
                 </ButtonWrapper>
+                </div>
             </ContainerNull>
         </Container>
     )

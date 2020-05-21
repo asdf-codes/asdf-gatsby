@@ -1,38 +1,7 @@
 import styled from 'styled-components'
 
 
-export const ButtonWrapper = styled.div `
-    padding-top: 3vw;
-`
 
-export const Button = styled.button `
-    font-family: Courier, monospace;
-    background-color: transparent;
-    border: none;
-    color: blue;
-    text-align: right;
-    font-size: clamp(18px, 3vw, 22px);
-    border: 0.2em solid black;
-    border-radius: 100px;
-    cursor: pointer;
-    padding: 0.6rem 2rem;
-    display: flex;
-    align-content: center;
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
-        background-color: black;
-
-
-        a {
-          color: white;
-        }
-    }
-    
-    a {
-      color: black;
-    }
-`
 
 export const A = styled.a `
 
