@@ -8,9 +8,9 @@ export const ButtonWrapper = styled(props => <Link {...props}/>) `
 `
 
 export const Button = styled.button`
- font-family: Courier, monospace;
+    font-family: Courier, monospace;
     background-color: transparent;
-    
+    font-weight: 300;
     border: none;
     color: black;
     text-align: right;

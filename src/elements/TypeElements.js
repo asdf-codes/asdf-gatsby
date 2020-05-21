@@ -22,10 +22,10 @@ export const TypeContainer = styled.div `
     h5,
     h6 {
         color: ${props => props.theme.colors.dark1};
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: ${props => props.theme.fonts.sansSerif};
         font-style: normal;
-        font-weight: 600;
-        font-size: clamp(25px, 4vw, 6vw);;
+        font-weight: 300;
+        
     }
     
     h1:not(:first-child),
@@ -38,7 +38,8 @@ export const TypeContainer = styled.div `
     }
     
     h1 {
-        font-size: 2.25rem;
+        font-family: ${props => props.theme.fonts.Serif};
+        font-size: clamp(45px, 4vw, 4vw);
         line-height: 2.5rem;
         font-weight: 600;
     }
@@ -78,8 +79,11 @@ export const TypeContainer = styled.div `
         font-size: 1.125rem;
         line-height: 1.875rem;
         font-weight: 400;
+        font-family: ${props => props.theme.fonts.mono};
         color: ${props => props.theme.colors.dark2};
         margin-top: 2rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
     
     a {
@@ -101,7 +105,7 @@ export const TypeContainer = styled.div `
     
     blockquote p {
         font-style: italic;
-        font-size: clamp(22px, 2vw, 4vw);;;
+        font-size: clamp(22px, 2vw, 3vw);;;
         line-height: 2.125rem;
         margin: 3rem auto;
     }
