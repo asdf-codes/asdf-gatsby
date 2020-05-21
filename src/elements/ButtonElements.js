@@ -14,7 +14,7 @@ export const Button = styled.button`
     border: none;
     color: black;
     text-align: right;
-    font-size: clamp(18px, 3vw, 22px);
+    font-size: min(18px, 3vw);
     border: 0.2em solid black;
     border-radius: 100px;
     cursor: pointer;

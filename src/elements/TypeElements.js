@@ -39,7 +39,7 @@ export const TypeContainer = styled.div `
     
     h1 {
         font-family: ${props => props.theme.fonts.Serif};
-        font-size: clamp(45px, 4vw, 4vw);
+        font-size: min(45px, 4vw);
         line-height: 2.5rem;
         font-weight: 600;
     }
@@ -105,7 +105,7 @@ export const TypeContainer = styled.div `
     
     blockquote p {
         font-style: italic;
-        font-size: clamp(22px, 2vw, 3vw);;;
+        font-size: min(22px, 3vw);;;
         line-height: 2.125rem;
         margin: 3rem auto;
     }

@@ -9,7 +9,7 @@ export const A = styled.a `
 `
 
 export const H1 = styled.h1 `
-    font-size:  clamp(45px, 8vw, 12vw);
+    font-size:  min(45px, 8vw);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -35,7 +35,7 @@ export const P = styled.p`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: clamp(25px, 4vw, 6vw);;
+    font-size: min(25px, 6vw);
 `
 
   
