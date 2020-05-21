@@ -10,7 +10,9 @@ export const ContentCard = ({ title, excerpt, slug, image, body }) => {
                 <CoverImage fluid={image}/>
             </ContentLink>
             <TypeContainer>
-                <MDXRenderer>{body}</MDXRenderer>
+                <MDXRenderer style={{
+                    
+                }}>{body}</MDXRenderer>
             </TypeContainer>
         </ContentWrapper>
     )

@@ -4,6 +4,7 @@ export const TypeContainer = styled.div `
     padding-top: 5rem;
     max-width: 50vw;
     margin: 0 auto;
+    padding: 5rem 0;
     
 
     @media ${props=> props.theme.breakpoints.tablet} {
@@ -21,6 +22,10 @@ export const TypeContainer = styled.div `
     h5,
     h6 {
         color: ${props => props.theme.colors.dark1};
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(25px, 4vw, 6vw);;
     }
     
     h1:not(:first-child),
@@ -35,7 +40,7 @@ export const TypeContainer = styled.div `
     h1 {
         font-size: 2.25rem;
         line-height: 2.5rem;
-        font-weight: 400;
+        font-weight: 600;
     }
     
     h2 {
@@ -96,10 +101,8 @@ export const TypeContainer = styled.div `
     
     blockquote p {
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: clamp(22px, 2vw, 4vw);;;
         line-height: 2.125rem;
-        text-align: center;
-        max-width: 36rem;
         margin: 3rem auto;
     }
     
@@ -152,14 +155,12 @@ export const TypeContainer = styled.div `
     th,
     td {
         text-align: left;
-        padding: 0.5rem;
+      
     }
 
     @media ${props => props.theme.breakpoints.tablet} {
         grid-column: 2 / span 6;
     }
-    @media ${props => props.theme.breakpoints.mobile} {
-        padding: ${props => `${props.theme.spacing.medium} ${props.theme.spacing.large}`};
-    }
+    
 
 `
