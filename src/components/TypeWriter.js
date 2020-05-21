@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, ContainerNull, ButtonWrapper, H1, P, Button} from '../elements'
+import {Container, ContainerNull, ButtonWrapper, H1, P, Button, Divider} from '../elements'
 import {Link} from 'gatsby'
 
 
@@ -8,6 +8,7 @@ export const TypeWriter = () => {
         <Container>
             <ContainerNull>
                 <H1>Hello, World</H1>
+                <Divider/>
                 <P>
                 we do more with less & help people
                 </P>
@@ -15,8 +16,9 @@ export const TypeWriter = () => {
                 put ideas on the internet.
                 </P>
                 <div style={{
-                    paddingTop: '3vw',
+                    paddingTop: '2vw',
                 }}>
+                <Divider/>
                 <ButtonWrapper to="Projects">
                     <Button>👁 PROJECTS 👁</Button>
                 </ButtonWrapper>

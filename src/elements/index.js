@@ -11,3 +11,5 @@ export * from './ProjectElements'
 export * from './TypeElements'
 
 export * from './ButtonElements'
+
+export * from './DividerElements'
