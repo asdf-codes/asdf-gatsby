@@ -16,7 +16,9 @@ export const TypeWriter = () => {
                 </P>
 
                 <ButtonWrapper>
-                    <Button><Link to="Projects">Ideas on the internet</Link></Button>
+                    <Button><Link to="Projects" style={{
+                        
+                    }}> 👁PROJECTS👁</Link></Button>
                 </ButtonWrapper>
             </ContainerNull>
         </Container>

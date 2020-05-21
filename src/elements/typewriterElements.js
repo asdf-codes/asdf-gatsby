@@ -11,14 +11,36 @@ export const Button = styled.button `
     border: none;
     color: blue;
     text-align: right;
-    border-bottom: 0.07em solid blue;
-    display: inline-block;
     font-size: clamp(18px, 3vw, 22px);
+    border: 0.2em solid black;
+    border-radius: 100px;
     cursor: pointer;
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-content: center;
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        background-color: black;
+
+
+        a {
+          color: white;
+        }
+    }
+    
+    a {
+      color: black;
+    }
+`
+
+export const A = styled.a `
+
+
 `
 
 export const H1 = styled.h1 `
-    font-size: clamp(38px, 8vw, 12vw);
+    font-size:  clamp(45px, 8vw, 12vw);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     overflow: hidden; /* Ensures the content is not revealed until the animation */

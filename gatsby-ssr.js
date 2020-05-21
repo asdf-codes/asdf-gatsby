@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     img {
        position: relative;
     }
+
+    a, u {
+    text-decoration: none;
+}
 `
 
 

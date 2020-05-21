@@ -1,8 +1,8 @@
 export default {
     fonts: {
-      serif: "Times",
-      sansSerif: "Arial",
-      mono: "Courier", 
+      serif: "Times New Roman', Times, serif",
+      sansSerif: "Arial, Helvetica, sans-serif",
+      mono: "Courier, monospace", 
     },
     colors: {
       main1: "black",
