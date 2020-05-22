@@ -17,7 +17,7 @@ export const CoverImage = ({fluid}) => {
     return (
             <Img fluid={fluid ? fluid : data.imageSharp.fluid} style={{   
                 maxWidth: "500px",
-                margin: "0 auto"
+                margin: "0 auto",
         }}/>
     )
 }

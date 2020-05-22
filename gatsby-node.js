@@ -33,6 +33,21 @@ exports.createPages = async function({actions, graphql}) {
         })
     })
 
+    const GridPerPage = 10
+
+    Array.from({length: GridPerPage}).forEach((_, i) => {
+        actions.createPage({
+            path: i === 0 ? `Grid` : `Grid${i + 1}`,
+            component: require.resolve("./src/templates/gridProjects.js"),
+            context: {
+                limit: GridPerPage,
+                skip: i * GridPerPage,
+                numPages,
+                currentPage: i + 1,
+            }
+        })
+    })
+
     const projects = data.allMdx.edges
 
 // create single blog posts

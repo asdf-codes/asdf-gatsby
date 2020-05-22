@@ -15,3 +15,6 @@ export const ContentLink = styled(props => <Link {...props}/>)`
     height: 100px;
 `
 
+export const GridCardWrapper = styled.div `
+    
+`

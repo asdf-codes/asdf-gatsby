@@ -19,3 +19,12 @@ export const ContainerNull = styled.div `
     justify-content: center;
     
 `
+
+export const GridContainer = styled.div `
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: minmax(100px auto);
+    grid-auto-flow: dense;
+    grid-gap: 2rem;
+`

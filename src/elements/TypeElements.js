@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const TypeContainer = styled.div `
     padding-top: 5rem;
-    max-width: 50vw;
+    width: min(600px, 90vw);
     margin: 0 auto;
     padding: 5rem 0;
     
