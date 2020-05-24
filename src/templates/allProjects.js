@@ -67,7 +67,7 @@ export const pageQuery = graphql`
                 slug
                 featureImage {
                     childImageSharp {
-                        fluid {
+                        fluid{
                             ...GatsbyImageSharpFluid
                                 }
                             }
