@@ -16,7 +16,7 @@ export const Container = styled.div `
     display: grid;
     grid-template-columns: 1fr 50% 50% 1fr;
     height: 100vh;
-    max-width: 1000px;
+    width: 1000px;
     
     grid-gap: 0.1rem;
 

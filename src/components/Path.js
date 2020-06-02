@@ -5,10 +5,10 @@ export const Path = () => {
 
     
     return (
-        <div style={{
-            display: "flex",
-        }}>
-            <svg maxWidth="1226" maxHeight="1226" viewBox="0 0 1226 1226" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        
+            <svg maxWidth="1226" maxHeight="1226" viewBox="0 0 1226 1226" fill="none" xmlns="http://www.w3.org/2000/svg" style={{display: "flex",
+            alignSelf: "center"}}>
             <circle cx="613.5" cy="612.5" r="531.5" stroke="black" stroke-width="8"/>
             <circle cx="613.242" cy="612.242" r="341.242" stroke="black" stroke-width="8"/>
             <g id="errow1">
@@ -22,7 +22,7 @@ export const Path = () => {
             </g>
             <circle cx="613.5" cy="612.5" r="159.536" stroke="black" stroke-width="8"/>
             </svg>
-
-        </div>
+        
+       
     )
 }

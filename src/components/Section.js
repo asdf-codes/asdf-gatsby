@@ -15,7 +15,7 @@ export const Section = ({children}) => {
                 {children}
               
             </ContainerNull>
-            <Path/>
+            <Path />
         </Container>
         </ContainerMain>
     )
