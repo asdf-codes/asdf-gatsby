@@ -1,6 +1,6 @@
 export * from './ContainerElements'
 
-export * from './typewriterElements'
+export * from './WelcomeElements'
 
 export * from './ContentElements'
 

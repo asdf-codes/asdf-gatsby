@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { GridCard } from '../components'
-import { Container, GridContainer } from '../elements'
+import { Container, Grid } from '../elements'
 
 const gridProjects = ({data}) => {
 
     const gridItem = data.allMdx.edges
 
     return(
-                <GridContainer>
+                <Grid>
                     {gridItem.map(gridItem => (
                         <GridCard
                         key={gridItem.node.frontmatter.slug}
@@ -20,7 +20,7 @@ const gridProjects = ({data}) => {
                         body={gridItem.node.body}
                         />
                     ))}
-                </GridContainer>
+                </Grid>
     )
 }
 
