@@ -56,8 +56,8 @@ module.exports = {
         name: `asdf`,
         short_name: `asdf`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `rgb(247, 247, 247)`,
+        theme_color: `rgb(247, 247, 247)`,
         display: `minimal-ui`,
         icon: `src/images/asdf.png`, // This path is relative to the root of the site.
       },

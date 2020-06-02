@@ -6,7 +6,7 @@ export const ContentWrapper = styled.div `
     margin-top: 5rem;
     grid-column: 2 / 3;
     grid-row: 2/3;
-    overflow: hidden;
+    
     position: relative;
 `
 

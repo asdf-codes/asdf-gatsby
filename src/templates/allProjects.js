@@ -4,7 +4,7 @@ import {
     ContentCard,
     Pagination
 } from "../components"
-import {Container} from '../elements'
+import {ContentContainer} from '../elements'
 
 const allProjects = ({pageContext, data}) => {
     const {currentPage, numPages} = pageContext
@@ -16,7 +16,7 @@ const allProjects = ({pageContext, data}) => {
     const posts = data.allMdx.edges
 
     return (
-        <Container>
+        <ContentContainer>
             <Link style={{        
                 width: '100%',
                 height: '50px',
@@ -47,7 +47,7 @@ const allProjects = ({pageContext, data}) => {
                 prevPage={prevPage}
                 nextPage={nextPage}
             />
-        </Container>
+        </ContentContainer>
     )
 
 }

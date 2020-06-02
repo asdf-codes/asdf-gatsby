@@ -1,15 +1,29 @@
 import styled from 'styled-components'
 
+export const ContainerMain = styled.div `
+    display: flex;
+    justify-content: center;
+    
+`
+
+export const ContentContainer = styled.div `
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    height: 100vh;
+`
+
 export const Container = styled.div `
     display: grid;
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 50% 50% 1fr;
     height: 100vh;
-    max-width: 1920px;
+    max-width: 1000px;
     
     grid-gap: 0.1rem;
 
     @media ${props => props.theme.breakpoints.tablet} {
-        grid-template-columns: 1fr 80vw 1fr;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
     }
 
     @media ${props => props.theme.breakpoints.mobile} {
@@ -18,14 +32,22 @@ export const Container = styled.div `
 `
 
 export const ContainerNull = styled.div `
-    padding-top: 10rem;
+    display:flex;
+    align-items: center;
     grid-column: 2 / 3;
+    @media ${props => props.theme.breakpoints.tablet} {
+        margin-bottom: 5rem;
+    }
 `
 
 export const ContainerVisual = styled.div `
     grid-column: 3 / 4;
     
-    background: url(../images/Method.png) no-repeat center center fixed
+
+    @media ${props => props.theme.breakpoints.mobile} {
+        grid-column: 2 / 3;
+    }
+    
 `
 
 export const Grid = styled.div `
